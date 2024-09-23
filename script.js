@@ -8,19 +8,13 @@ const Snaresound = new Audio("DATA/Snare.mp3");
 const Splashsound = new Audio("DATA/splash.wav");
 const Tomsound = new Audio("DATA/Tom.wav");
 
-function crash() {
-  console.log("crash");
-  Crashsound.play();
-}
-
 document.addEventListener("keydown", (e) => {
-
   let userInput = e.key;
 
   switch (userInput) {
-
     case "1":
-      crash();
+      Crashsound.play();
+
       break;
 
     case "2":
@@ -46,12 +40,12 @@ document.addEventListener("keydown", (e) => {
       kicksound.play();
       break;
 
-      case "8":
-        Snaresound.play();
-break;
-        case "9":
-        Tomsound.play()
-        break
+    case "8":
+      Snaresound.play();
+      break;
+    case "9":
+      Tomsound.play();
+      break;
 
     default:
       console.log("INVALID REQUEST");
