@@ -8,6 +8,34 @@ const Snaresound = new Audio("DATA/Snare.mp3");
 const Splashsound = new Audio("DATA/splash.wav");
 const Tomsound = new Audio("DATA/Tom.wav");
 
+
+function crashfn(){
+  Crashsound.play();
+}
+function closedfn (){
+  closedsound.play()
+}
+function floorfn() {
+  floorsound.play()
+}
+function kickfn() {
+  kicksound.play()
+}
+function openfn() {
+  openHHsound.play()
+}
+function ridefn() {
+  Ridesound.play()
+}
+function snarefn(){
+  Snaresound.play()
+}
+function splasfn() {
+  Splashsound.play()
+}
+function tomfn(){
+  Tomsound.play()
+}
 document.addEventListener("keydown", (e) => {
   let userInput = e.key;
 
