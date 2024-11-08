@@ -34,6 +34,7 @@ div {
   border: 1px solid black;
   position: relative;
   border-radius: 5px;
+  text-align: center;
 }
 
 h2 {
@@ -41,4 +42,13 @@ h2 {
   left: 5px;
   top: 5px;
   font-size: 1.5rem;
+}
+
+@media (max-width: 500px){
+  div{font-size: 20px;
+  text-align: center;}
+
+  .container{
+    gap: 5px;
+  }
 }
